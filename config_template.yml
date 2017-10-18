@@ -1,0 +1,9 @@
+mongo:
+    # the following info is needed to save data to mongoDB
+    host:
+    port:
+    database:
+    collection_job:
+    collection_emp:
+    username:
+    password:

@@ -1,0 +1,3 @@
+[submodule "crawlbot"]
+	path = crawlbot
+	url = https://github.com/casunlight/crawlbot.git
