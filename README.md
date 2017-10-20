@@ -40,9 +40,11 @@
 
 ## Installation
 
-- Clone the GitHub repo and change your working directory into the `job_scraper` directory.
-
-- Create a `params.yml` file with mongoDB connection using the template, save it under `scraper/` directory
+- Clone the GitHub repo including the submodule
+  ```
+  git clone --recursive https://github.com/SYAN83/scraping_job_docker.git
+  ```
+- Change your working directory into the `scraping_job_docker` directory, create file `params.yml` with mongoDB connection using the template `config_template.yml`, save it under `crawlbot/` directory
 
 - Build the docker image via the following command
 
