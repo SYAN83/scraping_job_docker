@@ -49,7 +49,7 @@
 - Build the docker image via the following command
 
 ```sh
-docker build -t docker_scraper .
+docker build -t scraping_scheduler .
 ```
 
 ## Usage
@@ -57,13 +57,17 @@ docker build -t docker_scraper .
 - Run the following command to start docker container
 
 ```sh
-docker run -d docker_scraper
+docker run -d scraping_scheduler
 ```
 
 - Run the following command to check log in docker container
-
-```sh
-docker exec -i -t docker_scraper bash
-root# cat /scraper/scraper.log
-```
+  1. Find your container id with command:
+  ```sh
+  docker container list
+  ```
+  2. Access the docker container via:
+  ```sh
+  docker exec -i -t CONTAINER_ID bash
+  root# cat /crawlbot/scheduler.log
+  ```
 
