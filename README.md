@@ -1,8 +1,8 @@
-# glassdoor Scraper
+# Scrapeing Jobs Scheduler
 
-> A docker image to scrape jobs and employees data from www.glassdoor.com and save to mongoDB.
+A docker image to schedule scraping jobs for websites.
 
-## Setting Up Environment in AWS EC2 (Ubuntu)
+## Setting Up Linux Environment (AMI: Ubuntu 16.04)
 
 - Update system
   ```
