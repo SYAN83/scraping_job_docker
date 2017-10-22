@@ -13,4 +13,4 @@ ADD crawlbot/requirements.txt /
 RUN pip3 install -r /requirements.txt
 
 # Execute job_scheduler
-CMD ["python3","/crawlbot/scheduler.py"]
+CMD cd crawlbot && python3 scheduler.py
