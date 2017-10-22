@@ -57,17 +57,11 @@ docker build -t scraping_scheduler .
 - Run the following command to start docker container
 
 ```sh
-docker run -d scraping_scheduler
+docker run -d -it --mount type=bind,source="$(pwd)"/crawlbot,target=/crawlbot scraping_scheduler:latest
 ```
 
 - Run the following command to check log in docker container
-  1. Find your container id with command:
-  ```sh
-  docker container list
-  ```
-  2. Access the docker container via:
-  ```sh
-  docker exec -i -t CONTAINER_ID bash
-  root# cat /crawlbot/scheduler.log
-  ```
+```sh
+cat crawlbot/scheduler.log
+```
 
