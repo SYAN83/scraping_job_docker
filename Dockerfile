@@ -5,7 +5,7 @@ MAINTAINER yanshu.usc@gmail.com
 RUN apt-get update
 RUN apt -y install vim
 RUN apt install git
-
+RUN pip3 install --upgrade pip
 # Add scraper files in the scraper directory
 ADD crawlbot/requirements.txt /
 
