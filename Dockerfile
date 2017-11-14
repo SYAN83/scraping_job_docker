@@ -6,6 +6,7 @@ RUN apt-get update
 RUN apt -y install vim
 RUN apt install git
 RUN pip3 install --upgrade pip
+RUN pip3 install bs4
 # Add scraper files in the scraper directory
 ADD crawlbot/requirements.txt /
 
