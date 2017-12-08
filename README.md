@@ -48,23 +48,23 @@ A docker image to schedule scraping jobs for websites.
 
 - Build the docker image via the following command
 
-```sh
-docker build -t scraping_scheduler .
-```
+  ```sh
+  docker build -t scraping_scheduler .
+  ```
 
 ## Usage
 
 - Run the following command to start docker container
 
-```sh
-docker run -d -it \
-  --mount type=bind,source="$(pwd)"/crawlbot,target=/crawlbot \
-  scraping_scheduler:latest
-```
+  ```sh
+  docker run -d -it \
+    --mount type=bind,source="$(pwd)"/crawlbot,target=/crawlbot \
+    scraping_scheduler:latest
+  ```
 
 - Run the following command to check log in docker container
 
-```sh
-cat crawlbot/scheduler.log
-```
+  ```sh
+  cat crawlbot/scheduler.log
+  ```
 
