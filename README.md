@@ -2,12 +2,12 @@
 
 A docker image to schedule scraping jobs for websites.
 
-## Setting Up Linux Environment (AMI: Ubuntu 16.04)
+## Setting Up Docker Environment (AMI: Ubuntu 16.04)
 
 - Update system
   ```
   sudo apt-get update
-  sudo apt-get upgrade
+  sudo apt-get -y upgrade
   ```
 
 - Install git
@@ -32,7 +32,7 @@ A docker image to schedule scraping jobs for websites.
      stable"
 
   sudo apt-get update    
-  sudo apt-get install docker-ce
+  sudo apt-get -y install docker-ce
 
   sudo usermod -aG docker $USER
   ```
