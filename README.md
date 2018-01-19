@@ -44,7 +44,7 @@ A docker image to schedule scraping jobs for websites.
   ```
   git clone --recursive https://github.com/SYAN83/scraping_job_docker.git
   ```
-- Change your working directory into the `scraping_job_docker` directory, create file `params.yml` with mongoDB connection using the template `config_template.yml`, save it under `crawlbot/` directory
+- Change your working directory into the `scraping_job_docker` directory, create config file `config.yml` with mongoDB connection using the template `config_template.yml`, save it under `crawlbot/` directory
 
 - Build the docker image via the following command
 
